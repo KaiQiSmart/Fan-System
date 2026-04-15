@@ -1,0 +1,12 @@
+[BUG]: no found input "*.py"
+
+## Command Line
+C:\Users\RYAN.CHUANG\AppData\Local\Programs\Python\Python310\Scripts\pyarmor gen -e 2026-05-01 *.py
+
+## Environments
+Python 3.10.11
+Pyarmor 9.2.4 (trial), 000000, non-profits
+Platform windows.x86_64
+Native windows.amd64
+Home C:\Users\RYAN.CHUANG\.pyarmor
+

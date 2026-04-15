@@ -1,0 +1,16 @@
+{
+  "conditions": {
+    "blade_model": "A8020 NEW_7B.json",
+    "speed_rpm": 4500
+  },
+  "outputs": {
+    "pq_curve": [
+      { "idx": 1, "P": 10.800, "Q": 0.000 },
+      { "idx": 2, "P": 3.366, "Q": 22.349 },
+      { "idx": 3, "P": 3.163, "Q": 27.431 },
+      { "idx": 4, "P": 2.562, "Q": 31.725 },
+      { "idx": 5, "P": 0.000, "Q": 38.861 }
+    ],
+    "noise_dba": null
+  }
+}

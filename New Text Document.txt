@@ -1,0 +1,37 @@
+1️⃣ Project Folder Structure (GUI only)
+
+FanSystem/
+│
+├─ GUI.py
+│
+├─ blade_rib/
+│   ├─ blade_gui.py
+│
+├─ pq_predict/
+│   └─ pq_predict_gui.py      # placeholder (later)
+│
+├─ pq_training/
+│   └─ pq_training_gui.py     # placeholder (later)
+│
+├─ database/
+│   └─ database_gui.py        # placeholder (later)
+│
+├─ docs/
+│   └─ docs_gui.py            # placeholder (later)
+│
+└─ utils/
+    └─ ui_style.py            # optional later
+
+-------------------------------------------------------
+2️⃣ GUI.py — Main Application GUI
+
+Role
+
+1.Application entry
+
+2.Feature switching only
+
+3.Single window
+
+4.No business logic
+--------------------------------------------------------
