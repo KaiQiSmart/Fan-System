@@ -29,7 +29,7 @@ UI_FEATURE_LABELS = [
 INPUT_DIM = len(UI_FEATURE_LABELS)  # 33
 OUTPUT_DIM = 20
 
-TARGET_LABELS = [f"{pq}{i}" for i in range(1, 11) for pq in ['P', 'Q']]
+TARGET_LABELS = [f"P{i}" for i in range(1, 11)] + [f"Q{i}" for i in range(1, 11)]
 
 RANDOM_STATE = 42
 UNITS = {

@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "BC01_5B.json",
+    "speed_rpm": 5000,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 5.074, "Q": 0.000 },
+        { "idx": 2, "P": 2.066, "Q": 5.707 },
+        { "idx": 3, "P": 1.639, "Q": 8.564 },
+        { "idx": 4, "P": 1.342, "Q": 9.979 },
+        { "idx": 5, "P": 0.000, "Q": 12.857 }
+    ],
+    "noise_dba": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "TW_reversed_0616_5B.json",
+    "speed_rpm": 5000,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 4.862, "Q": 0.000 },
+        { "idx": 2, "P": 1.955, "Q": 4.931 },
+        { "idx": 3, "P": 1.537, "Q": 6.399 },
+        { "idx": 4, "P": 1.284, "Q": 7.111 },
+        { "idx": 5, "P": 0.000, "Q": 9.515 }
+    ],
+    "noise_dba": null
+  }
+}

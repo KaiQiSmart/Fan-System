@@ -28,15 +28,22 @@ MODEL_DIR   = os.path.join(PQ_CURVE_MODEL_DIR, "1_Model")           # For .keras
 PQ_DATA_DIR  = os.path.join(PQ_CURVE_MODEL_DIR, "2_train_PQ_Data")   # For PQ JSON files
 RESULT_DIR   = os.path.join(PQ_CURVE_MODEL_DIR, "3_Predic_Result")   # For output reports
 
+# 5. Define Classified Data Sub-folders under PQ_DATA_DIR
+# Based on the uploaded image structure
+PQ_DATA_UNDER_50 = os.path.join(PQ_DATA_DIR, "1_under50")
+PQ_DATA_50_69    = os.path.join(PQ_DATA_DIR, "2_50 to 69")
+PQ_DATA_OVER_70  = os.path.join(PQ_DATA_DIR, "3_over70")
+
+# List of all category paths for easy iteration if needed
+PQ_CATEGORY_DIRS = [PQ_DATA_UNDER_50, PQ_DATA_50_69, PQ_DATA_OVER_70]
+
 # Ensure all critical directories exist
 os.makedirs(BLADE_PARAM_DIR, exist_ok=True)
 os.makedirs(MODEL_DIR, exist_ok=True)
 os.makedirs(PQ_DATA_DIR, exist_ok=True)
 os.makedirs(RESULT_DIR, exist_ok=True)
 
-# 5. Specific File Path Definitions
-MODEL_PATH  = os.path.join(MODEL_DIR, "fan_pq_model_weights.pth")
-SCALER_PATH = os.path.join(MODEL_DIR, "fan_scaler.joblib")
+for path in PQ_CATEGORY_DIRS:os.makedirs(path, exist_ok=True)
 
 # Global constants for reproducibility
 RANDOM_STATE = 42

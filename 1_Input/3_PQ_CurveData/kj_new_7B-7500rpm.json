@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "kj_new_7B.json",
+    "speed_rpm": 7500,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 13.322, "Q": 0.000 },
+        { "idx": 2, "P": 3.276, "Q": 7.010 },
+        { "idx": 3, "P": 3.420, "Q": 9.250 },
+        { "idx": 4, "P": 3.111, "Q": 11.052 },
+        { "idx": 5, "P": 0.000, "Q": 14.491 }
+    ],
+    "noise_dba": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "A6020K_5B.json",
+    "speed_rpm": 5000,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 7.069, "Q": 0.000 },
+        { "idx": 2, "P": 2.656, "Q": 12.531 },
+        { "idx": 3, "P": 2.997, "Q": 17.168 },
+        { "idx": 4, "P": 1.937, "Q": 23.416 },
+        { "idx": 5, "P": 0.000, "Q": 28.496 }
+    ],
+    "noise_dba": null
+  }
+}

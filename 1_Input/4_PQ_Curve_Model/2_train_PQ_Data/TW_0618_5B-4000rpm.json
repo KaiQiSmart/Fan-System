@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "TW_0618_5B.json",
+    "speed_rpm": 4000,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 3.491, "Q": 0.000 },
+        { "idx": 2, "P": 1.540, "Q": 3.411 },
+        { "idx": 3, "P": 1.295, "Q": 5.117 },
+        { "idx": 4, "P": 0.968, "Q": 6.267 },
+        { "idx": 5, "P": 0.000, "Q": 8.384 }
+    ],
+    "noise_dba": null
+  }
+}

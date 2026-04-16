@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "HT11_5B.json",
+    "speed_rpm": 5000,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 3.710, "Q": 0.000 },
+        { "idx": 2, "P": 1.215, "Q": 3.205 },
+        { "idx": 3, "P": 1.100, "Q": 3.955 },
+        { "idx": 4, "P": 0.763, "Q": 5.675 },
+        { "idx": 5, "P": 0.000, "Q": 7.107 }
+    ],
+    "noise_dba": null
+  }
+}

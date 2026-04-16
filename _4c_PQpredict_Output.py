@@ -1,40 +1,32 @@
 """
 ================================================================================
-PROJECT: PQ Prediction System
+PROJECT: Fan Integrated Design Platform
 MODULE: _4c_PQpredict_Output.py
 DESCRIPTION: 
-    This module handles the post-processing of prediction results. 
-    It provides functionalities for:
-    1. Generating performance metric reports (MSE, MAE, R2).
-    2. Visualizing actual vs. predicted data using Matplotlib.
-    3. Exporting processed results to CSV files for external analysis.
-USAGE:
-    Import the PQOutputManager class into the main execution script 
-    (_4b_PQpredict_main.py) or the GUI module (_4_PQpredict_GUI.py).
+    - Post-processing and export logic for prediction results.
+    - Consistency: Follows GUI logic [P1..P10, Q1..Q10] without sorting.
 ================================================================================
 """
 
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
+import numpy as np
 from datetime import datetime
 
 class PQOutputManager:
     """
-    Manages data visualization, console reporting, and file exportation.
+    Manages data reporting, CSV exportation, and static image saving.
     """
     
     def __init__(self, output_dir="output_results"):
-        """
-        Initializes the output directory for storing plots and CSV files.
-        """
         self.output_dir = output_dir
         if not os.path.exists(self.output_dir):
             os.makedirs(self.output_dir)
 
     def export_to_csv(self, data_dict, filename_prefix="PQ_Result"):
         """
-        Converts result dictionary to a DataFrame and saves it as a CSV.
+        Saves prediction results to a CSV file.
         """
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         file_name = f"{filename_prefix}_{timestamp}.csv"
@@ -45,53 +37,53 @@ class PQOutputManager:
         print(f"[INFO] Data exported to: {full_path}")
         return full_path
 
-    def plot_prediction_comparison(self, actual, predicted, title="PQ Prediction Analysis"):
+    def plot_prediction_comparison(self, raw_data, title="PQ Curve Analysis"):
         """
-        Creates and saves a comparison plot between actual and predicted values.
+        Generates and saves a PQ plot using the raw [P..Q] sequence.
         """
-        plt.figure(figsize=(10, 5))
-        plt.plot(actual, label='Actual', color='blue', linewidth=1.5)
-        plt.plot(predicted, label='Predicted', color='red', linestyle='--', linewidth=1.5)
+        data = np.array(raw_data).flatten()
+        if len(data) != 20:
+            print(f"[ERROR] Expected 20 values, got {len(data)}")
+            return
+
+        # Direct Mapping (No sorting)
+        p_plot = data[:10]
+        q_plot = data[10:]
+
+        plt.figure(figsize=(8, 6))
+        plt.plot(q_plot, p_plot, 'o-', color='red', label='AI Prediction', linewidth=2)
         
-        plt.title(title)
-        plt.xlabel('Sample Index')
-        plt.ylabel('PQ Value')
-        plt.legend(loc='upper right')
+        plt.title(title, fontweight='bold')
+        plt.xlabel('Flow Rate Q (CFM)', fontweight='bold')
+        plt.ylabel('Static Pressure P (mmAq)', fontweight='bold')
+        plt.legend()
         plt.grid(True, linestyle=':', alpha=0.7)
+        plt.xlim(left=0)
+        plt.ylim(bottom=0)
         
-        # Save plot to file
-        plot_path = os.path.join(self.output_dir, "latest_prediction_plot.png")
+        # Save plot
+        plot_path = os.path.join(self.output_dir, "latest_pq_curve.png")
         plt.savefig(plot_path)
-        plt.show()
-        print(f"[INFO] Visualization saved to: {plot_path}")
+        plt.close() # Close to prevent memory accumulation
+        print(f"[INFO] PQ Curve visualization saved to: {plot_path}")
 
     def print_performance_metrics(self, metrics):
         """
-        Formats and prints model metrics to the standard output.
+        Prints metrics to console.
         """
         print("\n" + "*"*40)
-        print("       SYSTEM PERFORMANCE REPORT")
+        print("      SYSTEM PERFORMANCE REPORT")
         print("*"*40)
         for key, val in metrics.items():
             print(f" -> {key:<15} : {val:.6f}")
         print("*"*40 + "\n")
 
 if __name__ == "__main__":
-    # --- Integration Test Case ---
-    # Simulated data for standalone execution check
-    test_actual = [1.0, 1.2, 1.5, 1.3, 1.1]
-    test_predict = [1.05, 1.18, 1.45, 1.32, 1.08]
-    test_metrics = {
-        "Mean Squared Error": 0.0024,
-        "R-Squared": 0.9850
-    }
+    # Test case: 10 Pressure points (high to low), 10 Flow points (low to high)
+    test_p = [15.0, 14.2, 13.0, 11.5, 9.8, 8.0, 6.2, 4.5, 2.8, 1.0]
+    test_q = [0.0, 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0]
     
-    output_service = PQOutputManager()
-    output_service.print_performance_metrics(test_metrics)
-    output_service.plot_prediction_comparison(test_actual, test_predict)
+    test_raw = test_p + test_q
     
-    test_results = {
-        "Actual_Value": test_actual,
-        "Predicted_Value": test_predict
-    }
-    output_service.export_to_csv(test_results)
+    manager = PQOutputManager()
+    manager.plot_prediction_comparison(test_raw)

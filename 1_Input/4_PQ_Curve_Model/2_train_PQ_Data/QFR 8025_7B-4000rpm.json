@@ -1,15 +1,18 @@
 {
-  "conditions": {
+  "basic_info": {
     "blade_model": "QFR 8025_7B.json",
-    "speed_rpm": 4000
+    "speed_rpm": 4000,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
   },
-  "outputs": {
+  "test_data": {
     "pq_curve": [
-      { "idx": 1, "P": 8.856, "Q": 0.000 },
-      { "idx": 2, "P": 2.946, "Q": 25.659 },
-      { "idx": 3, "P": 2.508, "Q": 35.704 },
-      { "idx": 4, "P": 1.659, "Q": 41.250 },
-      { "idx": 5, "P": 0.000, "Q": 46.273 }
+        { "idx": 1, "P": 8.856, "Q": 0.000 },
+        { "idx": 2, "P": 2.946, "Q": 25.659 },
+        { "idx": 3, "P": 2.508, "Q": 35.704 },
+        { "idx": 4, "P": 1.659, "Q": 41.250 },
+        { "idx": 5, "P": 0.000, "Q": 46.273 }
     ],
     "noise_dba": null
   }

@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "A7020_old_9B.json",
+    "speed_rpm": 2500,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 2.148, "Q": 0.000 },
+        { "idx": 2, "P": 0.760, "Q": 10.495 },
+        { "idx": 3, "P": 0.673, "Q": 15.363 },
+        { "idx": 4, "P": 0.747, "Q": 17.485 },
+        { "idx": 5, "P": 0.000, "Q": 22.638 }
+    ],
+    "noise_dba": null
+  }
+}

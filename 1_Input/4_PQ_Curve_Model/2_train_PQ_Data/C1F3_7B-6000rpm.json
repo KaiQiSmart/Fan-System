@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "C1F3_7B.json",
+    "speed_rpm": 6000,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 7.595, "Q": 0.000 },
+        { "idx": 2, "P": 2.018, "Q": 9.615 },
+        { "idx": 3, "P": 2.426, "Q": 12.120 },
+        { "idx": 4, "P": 1.893, "Q": 14.849 },
+        { "idx": 5, "P": 0.000, "Q": 17.754 }
+    ],
+    "noise_dba": null
+  }
+}

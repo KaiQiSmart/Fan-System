@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "A4020P_5O20_5B.json",
+    "speed_rpm": 5000,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 4.062, "Q": 0.000 },
+        { "idx": 2, "P": 1.441, "Q": 3.511 },
+        { "idx": 3, "P": 1.362, "Q": 4.197 },
+        { "idx": 4, "P": 1.242, "Q": 4.868 },
+        { "idx": 5, "P": 0.000, "Q": 6.408 }
+    ],
+    "noise_dba": null
+  }
+}

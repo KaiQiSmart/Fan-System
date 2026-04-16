@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "A5020ori_5B.json",
+    "speed_rpm": 5000,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 6.303, "Q": 0.000 },
+        { "idx": 2, "P": 1.971, "Q": 6.256 },
+        { "idx": 3, "P": 1.699, "Q": 8.851 },
+        { "idx": 4, "P": 1.334, "Q": 10.424 },
+        { "idx": 5, "P": 0.000, "Q": 12.656 }
+    ],
+    "noise_dba": null
+  }
+}

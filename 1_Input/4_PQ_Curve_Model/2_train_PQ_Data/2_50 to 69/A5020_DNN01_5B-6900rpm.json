@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "A5020_DNN01_5B.json",
+    "speed_rpm": 6900,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 15.000, "Q": 0.000 },
+        { "idx": 2, "P": 4.610, "Q": 8.770 },
+        { "idx": 3, "P": 4.670, "Q": 9.950 },
+        { "idx": 4, "P": 3.422, "Q": 11.970 },
+        { "idx": 5, "P": 0.000, "Q": 16.000 }
+    ],
+    "noise_dba": null
+  }
+}

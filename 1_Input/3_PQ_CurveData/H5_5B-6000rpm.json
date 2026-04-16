@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "H5_5B.json",
+    "speed_rpm": 6000,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 5.594, "Q": 0.000 },
+        { "idx": 2, "P": 1.595, "Q": 3.593 },
+        { "idx": 3, "P": 1.534, "Q": 4.458 },
+        { "idx": 4, "P": 1.356, "Q": 5.246 },
+        { "idx": 5, "P": 0.000, "Q": 7.195 }
+    ],
+    "noise_dba": null
+  }
+}

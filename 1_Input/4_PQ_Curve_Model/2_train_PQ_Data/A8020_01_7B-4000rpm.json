@@ -1,15 +1,18 @@
 {
-  "conditions": {
+  "basic_info": {
     "blade_model": "A8020_01_7B.json",
-    "speed_rpm": 4000
+    "speed_rpm": 4000,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
   },
-  "outputs": {
+  "test_data": {
     "pq_curve": [
-      { "idx": 1, "P": 4.689, "Q": 0.000 },
-      { "idx": 2, "P": 2.842, "Q": 17.707 },
-      { "idx": 3, "P": 2.694, "Q": 26.569 },
-      { "idx": 4, "P": 2.204, "Q": 30.951 },
-      { "idx": 5, "P": 0.000, "Q": 41.102 }
+        { "idx": 1, "P": 4.689, "Q": 0.000 },
+        { "idx": 2, "P": 2.842, "Q": 17.707 },
+        { "idx": 3, "P": 2.694, "Q": 26.569 },
+        { "idx": 4, "P": 2.204, "Q": 30.951 },
+        { "idx": 5, "P": 0.000, "Q": 41.102 }
     ],
     "noise_dba": null
   }

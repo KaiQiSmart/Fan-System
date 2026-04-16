@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "TW01_5B.json",
+    "speed_rpm": 6000,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 8.449, "Q": 0.000 },
+        { "idx": 2, "P": 3.054, "Q": 6.840 },
+        { "idx": 3, "P": 2.880, "Q": 8.529 },
+        { "idx": 4, "P": 2.140, "Q": 10.277 },
+        { "idx": 5, "P": 0.000, "Q": 13.114 }
+    ],
+    "noise_dba": null
+  }
+}

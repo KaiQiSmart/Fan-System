@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "A5020_4_4B.json",
+    "speed_rpm": 7000,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 11.478, "Q": 0.000 },
+        { "idx": 2, "P": 3.958, "Q": 8.971 },
+        { "idx": 3, "P": 3.649, "Q": 10.379 },
+        { "idx": 4, "P": 3.632, "Q": 12.975 },
+        { "idx": 5, "P": 0.000, "Q": 17.844 }
+    ],
+    "noise_dba": null
+  }
+}

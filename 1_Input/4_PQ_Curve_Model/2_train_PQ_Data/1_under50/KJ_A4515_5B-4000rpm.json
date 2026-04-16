@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "KJ_A4515_5B.json",
+    "speed_rpm": 4000,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 2.675, "Q": 0.000 },
+        { "idx": 2, "P": 0.815, "Q": 4.230 },
+        { "idx": 3, "P": 0.937, "Q": 6.011 },
+        { "idx": 4, "P": 0.710, "Q": 6.951 },
+        { "idx": 5, "P": 0.000, "Q": 8.613 }
+    ],
+    "noise_dba": null
+  }
+}

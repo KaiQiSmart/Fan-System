@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "H3_3B.json",
+    "speed_rpm": 4000,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 1.985, "Q": 0.000 },
+        { "idx": 2, "P": 0.781, "Q": 1.960 },
+        { "idx": 3, "P": 0.670, "Q": 2.489 },
+        { "idx": 4, "P": 0.593, "Q": 3.557 },
+        { "idx": 5, "P": 0.000, "Q": 4.863 }
+    ],
+    "noise_dba": null
+  }
+}

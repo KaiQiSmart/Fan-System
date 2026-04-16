@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "HW7_7B.json",
+    "speed_rpm": 4000,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 3.474, "Q": 0.000 },
+        { "idx": 2, "P": 1.016, "Q": 5.250 },
+        { "idx": 3, "P": 0.950, "Q": 6.622 },
+        { "idx": 4, "P": 0.794, "Q": 8.644 },
+        { "idx": 5, "P": 0.000, "Q": 10.550 }
+    ],
+    "noise_dba": null
+  }
+}

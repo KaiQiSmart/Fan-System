@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "C2F3_5B.json",
+    "speed_rpm": 5000,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 5.081, "Q": 0.000 },
+        { "idx": 2, "P": 1.919, "Q": 7.447 },
+        { "idx": 3, "P": 1.893, "Q": 11.045 },
+        { "idx": 4, "P": 1.573, "Q": 12.402 },
+        { "idx": 5, "P": 0.000, "Q": 15.749 }
+    ],
+    "noise_dba": null
+  }
+}

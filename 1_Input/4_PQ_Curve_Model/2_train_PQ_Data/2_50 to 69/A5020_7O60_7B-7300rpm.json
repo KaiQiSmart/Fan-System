@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "A5020_7O60_7B.json",
+    "speed_rpm": 7300,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 16.300, "Q": 0.000 },
+        { "idx": 2, "P": 7.850, "Q": 5.940 },
+        { "idx": 3, "P": 6.030, "Q": 7.952 },
+        { "idx": 4, "P": 5.050, "Q": 9.930 },
+        { "idx": 5, "P": 0.000, "Q": 15.500 }
+    ],
+    "noise_dba": null
+  }
+}

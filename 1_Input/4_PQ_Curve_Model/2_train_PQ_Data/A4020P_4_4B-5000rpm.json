@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "blade_model": "A4020P_4_4B.json",
+    "speed_rpm": 5000,
+    "data_source": null,
+    "test_conditions": null,
+    "upload_date": "2026/4/15"
+  },
+  "test_data": {
+    "pq_curve": [
+        { "idx": 1, "P": 4.136, "Q": 0.000 },
+        { "idx": 2, "P": 1.460, "Q": 2.806 },
+        { "idx": 3, "P": 1.205, "Q": 4.197 },
+        { "idx": 4, "P": 0.921, "Q": 5.608 },
+        { "idx": 5, "P": 0.000, "Q": 7.366 }
+    ],
+    "noise_dba": null
+  }
+}

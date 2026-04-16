@@ -6,6 +6,30 @@ PURPOSE: Define feature sequence, model hyperparameters, and data split ratios.
 ================================================================================
 """
 
+"""
+================================================================================
+{
+  "basic_info": {
+    "blade_model": "A8020 NEW_7B.json", // Model identifier (matches the .json file name in the blade parameters)
+    "speed_rpm": 2000,                  // Operating speed for PQ curve prediction rpm
+    "data_source": null,                //"measured / simulated / null"
+    "test_conditions": null,            //"Condition file name  / null"
+    "upload_date": 2026/4/15            // "YYYY/MM/DD" format, can be auto-generated on upload
+  },
+  "test_data": {
+    "pq_curve": [
+      { "idx": 1, "P": 2.133, "Q": 0.000 },
+      { "idx": 2, "P": 0.665, "Q": 9.933 },
+      { "idx": 3, "P": 0.625, "Q": 12.191 },
+      { "idx": 4, "P": 0.506, "Q": 14.100 },
+      { "idx": 5, "P": 0.000, "Q": 17.272 }
+    ],
+    "noise_dba": null
+  }
+}
+================================================================================
+"""
+
 # 1. Data Split Ratios
 # Define the percentage allocation for the training set (Train), validation set (Val), and test set (Test)
 TRAIN_RATIO = 70 
@@ -74,7 +98,7 @@ FEATURE_ORDER = [
 
 # 3. Target Label Definition (10-point PQ curve)
 # Adjust to 10 points, generating P1, Q1 ... P10, Q10 for a total of 20 values
-TARGET_LABELS = [f"{pq}{i}" for i in range(1, 11) for pq in ['P', 'Q']]
+TARGET_LABELS = [f"P{i}" for i in range(1, 11)] + [f"Q{i}" for i in range(1, 11)]
 
 # 4. Model Hyperparameters
 INPUT_DIM = len(FEATURE_ORDER)   # Should be 33
